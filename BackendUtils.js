@@ -59,7 +59,7 @@ const BackendUtils = {
 class Database {
   constructor() {
     this.mongoUri = process.env.mongoUri;
-    this.dbName = 'StumbleRush';
+    this.dbName = 'StumbleTours';
     this.client = null;
     this.db = null;
     this.collections = {
@@ -217,7 +217,7 @@ class UserModel {
   static async create(deviceId, platformData = {}) {
     const now = new Date();
     const userId = Math.floor(Math.random() * 1000);
-    const username = `.gg/sgrush<color=orange><sup>#${userId}`;
+    const username = <color=#00C8FF>.gg/sgtours</color><color=blue><sup>#${userId}`;
 
     const user = {
       id: userId,
