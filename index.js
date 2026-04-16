@@ -122,6 +122,9 @@ app.get("/user/config", (req, res) => {
     });
 });
 app.get("/usersettings", UserController.getSettings);
+app.get("/", (req, res) => {
+    res.send("OK");
+});
 app.post("/user/updateusername", UserController.updateUsername);
 app.get("/user/deleteaccount", UserController.deleteAccount);
 app.post("/user/linkplatform", UserController.linkPlatform);
