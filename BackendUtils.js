@@ -217,7 +217,7 @@ class UserModel {
   static async create(deviceId, platformData = {}) {
     const now = new Date();
     const userId = Math.floor(Math.random() * 1000);
-    const username = <color=#00C8FF>.gg/sgtours</color><color=blue><sup>#${userId}`;
+    const username = `<color=#00C8FF>.gg/sgtours</color><color=blue><sup>#${userId}</sup></color>`;
 
     const user = {
       id: userId,
