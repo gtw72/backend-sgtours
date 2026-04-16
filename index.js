@@ -114,6 +114,7 @@ class CrownController {
 app.get("/matchmaking/filter", MatchmakingController.getMatchmakingFilter);
 
 app.post("/user/login", UserController.login);
+app.post("/login", UserController.login);
 app.get("/user/config", (req, res) => {
     res.json({
         success: true,
